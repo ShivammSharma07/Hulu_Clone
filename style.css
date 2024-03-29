@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 62.5%;
+  background: #000;
+  color: #fff;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a {
+  color: #fff;
+}
+
+img {
+  width: 100%; /*100 per of the container*/
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  min-width: 13.5rem;
+  padding: 2rem 3.2rem;
+  font-size: 1.5rem;
+  line-height: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+h4{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #00ed82;
+}
+
+
+
+/* header section  */
+
+
+
+
+.header {
+  height: 530px;
+  background: url(./img/header.jpg) no-repeat center center / cover;
+}
+
+.header .logo {
+  width: 270px;
+  margin: 2rem 0;
+}
+
+.header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* background: red; */
+  padding: 1rem 0; /*you can also use 2rem 4rem*/
+}
+
+.header nav ul {
+  margin-right: 4rem;
+}
+
+.log-in {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.header .header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* background: red; */
+  margin-top: 3rem;
+}
+
+.header .header-content h4 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #00ed82;
+}
+
+.header .header-content .header-text1 {
+  font-size: 2.2rem;
+  font-weight: bolder;
+}
+
+.header .header-content .header-text2 {
+  font-size: 1.8rem;
+  margin: 2.5rem 0;
+}
+
+.legal-text {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 2rem;
+}
+
+
+
+/* sub heading  */
+
+
+
+.sub-header{
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 4rem;
+  background: linear-gradient( 318.68deg, #0f495c 0%, #0d3640 49.72%, #08141f 100% );
+}
+
+.get-b{
+  background: none;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.sub-header h3{
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+
+.sub-link{
+  display: block;
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-top: .5rem;
+  text-decoration: underline;
+}
+
+.sub-header > div:last-of-type{
+  justify-self: end;            /*this method is for picking up a div without calling out for it class just by sudo selector*/
+}
+
+.sub-header > div:last-of-type .sub-link{
+  text-align: center;
+}
+
+
+
+
+/* categories section  */
+
+
+
+
+.categories{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 9rem 4rem;
+}
+
+.categories h2{
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.categories .p-1{
+  font-size: 2.4rem;
+  max-width: 850px;
+  margin-bottom: 5rem;
+}
+
+.categories .covers{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 2rem;
+}
+
+.categories .covers img{
+  width: 300px;
+  height: 500px;
+  opacity: 0.6;
+}
+
+.categories .covers .text{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  text-align: left;
+}
+
+.cover-1, .cover-2, .cover-3, .cover-4{
+  position: relative;
+}
+
+.categories .covers .text p{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.categories .covers .text h3{
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+
+/* live-tv section  */
+
+.live{
+  background: #151516;
+  padding: 4rem;
+}
+
+.border{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 4px solid #1ce783;
+  border-radius: 1.6rem;
+  padding: 10rem;
+}
+
+.live .border h3{
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.live .border .para{
+  font-size: 2.4rem;
+  padding: 0 18rem;
+}
+
+.live .border a{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-top: 2rem;
+}
+
+/* live-sports  */
+
+.live-sport{
+  background: url(./img/live-sports.jpg) no-repeat center center / cover;
+  height: 100vh;
+  position: relative;
+}
+
+.live-sport .sport-content{
+  position: absolute;
+  top: 15rem;
+  left: 10rem;
+  max-width: 550px;
+}
+
+.live-sport .sport-content h3{
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.live-sport .sport-content .para{
+  font-size: 2.4rem;
+}
+
+.live-sport .sport-content .live-sport-logo{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 2rem; */
+  margin-top: 4rem;
+}
+
+.live-sport .sport-content .live-sport-logo div{
+  background: url(./img/network-logo-bg.png)  no-repeat center center / cover;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.live-sport .sport-content .live-sport-logo div img{
+  width: 40px;
+}
+
+
+.live-sport .sport-content .legal-text{
+  margin-top: 1rem;
+}
+
+/* footer-section  */
+
+.footer{
+  background: #ebedf2;
+  color: #333;
+}
+
+.footer .footer-container{
+  max-width: 1100px;
+  margin: auto;
+  padding: 4rem;
+}
+
+.footer .footer-container .footer-list{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.footer .footer-container .footer-list ul li{
+  font-size: 1.5rem;
+  line-height: 3rem;
+  cursor: pointer;
+}
+
+.footer .footer-container .footer-list ul .head{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+.footer .footer-container .social-icons a img{
+  height: 25px;
+  width: 25px;
+  margin-right: 25px;
+}
+
+.divider{
+  height: 3px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  margin: 3rem 0;
+}
+
+
+
+
+
+
+
+
+@media(max-width:1100px){
+  .categories .covers{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media(max-width:768px){
+
+  .header-text2{
+    display: none;
+  }
+
+  .header .logo{
+    width: 200px;
+  }
+
+  .header-text1{
+    margin-bottom: 2.2rem;
+  }
+}
+
+@media(max-width:461px){
+  .header-text1{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .header nav ul{
+    margin-right: 0;
+  }
+  .categories .covers{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
